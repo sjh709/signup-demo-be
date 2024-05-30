@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/api', indexRouter);
 
-const mongoURI = `mongodb://localhose:27017/todo-demo`;
+const mongoURI = `mongodb://localhost:27017/todo-demo`;
 
 mongoose
   .connect(mongoURI, { useNewUrlParser: true })
